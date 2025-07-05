@@ -2,7 +2,6 @@
 
 namespace Views;
 
-final class UserView extends \Moot\TemplateView
+final class UserView extends \TemplateView
 {
-    public const string TEMPLATE = 'user';
 }

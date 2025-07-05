@@ -30,11 +30,6 @@ abstract class Container
         $this->controller->invokeAction($class, $this->model, $args);
     }
 
-    public function getContentType(): string
-    {
-        return $this->view::CONTENT_TYPE;
-    }
-
     public function render(): string
     {
         ob_start();

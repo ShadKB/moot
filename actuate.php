@@ -18,13 +18,12 @@ if ($reflection->isSubclassOf(Moot\Container::class)) {
     $action_class = $_GET['action'];
     $container->actuate($action_class, $input['args'] ?? []);
     $serialize = filter_var($_GET['serialize'] ?? false, FILTER_VALIDATE_BOOLEAN);
+    header('Content-Type: application/json; charset=utf-8');
 
     if ($serialize) {
-        header('Content-Type: application/json; charset=utf-8');
         $output = json_encode(['model_data' => serialize($container->getModel())]);
         echo $output;
     } else {
-        header('Content-Type: ' . $container->getContentType());
         echo $container->render();
     }
 }
