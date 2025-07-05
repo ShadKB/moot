@@ -12,6 +12,7 @@ PHP language features demonstrated in this project:
 - Traits
 - Reflection
 - Type hinting
+- ArrayAccess
   
 Software development patterns demonstrated
 - Singleton
