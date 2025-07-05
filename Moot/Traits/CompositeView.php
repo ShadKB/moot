@@ -4,11 +4,6 @@ namespace Moot\Traits;
 
 trait CompositeView
 {
-    public function partial(string $template)
-    {
-
-    }
-
     public function view(string $containerClass): string
     {
         $reflection = new \ReflectionClass($containerClass);

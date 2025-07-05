@@ -1,10 +1,10 @@
 <?php
 
-namespace Moot\Models;
+namespace Models;
 
 final class AccountModel implements \Moot\Modelable
 {
-    private \Moot\Entities\User $user;
+    private \Entities\User $user;
 
     public array $data = ['name' => 'Papa'];
 

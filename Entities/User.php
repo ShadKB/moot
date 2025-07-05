@@ -1,6 +1,6 @@
 <?php
 
-namespace Moot\Entities;
+namespace Entities;
 
 use Moot\Schema\DataType;
 use Moot\Attributes\Column;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Moot\Actions;
+namespace Actions;
 
 final class SaveUserAction implements \Moot\Actionable
 {

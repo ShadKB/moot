@@ -1,6 +1,6 @@
 <?php
 
-namespace Moot\Controllers;
+namespace Controllers;
 
 final class AccountController extends \Moot\Controller
 {

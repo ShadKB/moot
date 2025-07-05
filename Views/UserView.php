@@ -1,6 +1,6 @@
 <?php
 
-namespace Moot\Views;
+namespace Views;
 
 final class UserView extends \Moot\TemplateView
 {
