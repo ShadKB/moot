@@ -1,6 +1,6 @@
 <?php
 
-class TemplateView extends \Moot\View
+class TemplateView extends \Moot\View implements ArrayAccess
 {
     private $variables = [];
 
@@ -14,11 +14,30 @@ class TemplateView extends \Moot\View
         }
         $template = strtolower(str_replace('\\', '/', $matches[1]));
         extract($this->variables);
-        include MOOT_BASEDIR . '/templates/' . $template . '.php';
+        include MOOT_DIRECTORY . '/templates/' . $template . '.php';
     }
 
-    public function __set($name, $value): void
+    public function offsetExists(mixed $offset): bool
     {
-        $this->variables[$name] = $value;
+        return isset($this->variables[$offset]);
+    }
+
+    public function offsetGet(mixed $offset): mixed
+    {
+        return isset($this->variables[$offset]) ? $this->variables[$offset] : null;
+    }
+
+    public function offsetSet(mixed $offset, mixed $value): void
+    {
+        if (is_null($offset)) {
+            $this->variables[] = $value;
+        } else {
+            $this->variables[$offset] = $value;
+        }
+    }
+
+    public function offsetUnset(mixed $offset): void
+    {
+        unset($this->variables[$offset]);
     }
 }

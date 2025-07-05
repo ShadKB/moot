@@ -3,7 +3,7 @@
 <head></head>
 
 <body>
-    <?= $container->render() ?>
+    <?= $content->render() ?>
 </body>
 
 </html>
