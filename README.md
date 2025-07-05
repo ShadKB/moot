@@ -2,12 +2,6 @@
 It implements an MVC system design following the opinions that controllers should not be responsible for determining which views are paired with which models. Instead, the concept of containers are used to construct the trio. The point of doing this promotes model and controller reusability.
 ### SPA support
 Moot enables wiring frontend containers to backend containers through the use of model serialization.
-### Software Development Patterns demonstrated
-- Singleton
-- Flyweight
-- Polymorphism
-- Facade
-
 ### The purpose of this project repo is to demonstrate PHP knowledge and skill.
 PHP language features demonstrated in this project:
 
@@ -15,3 +9,10 @@ PHP language features demonstrated in this project:
 - SPL autoloading
 - Attributes
 - Traits
+  
+## Software Development Patterns demonstrated
+- Singleton
+- Flyweight
+- Polymorphism
+- Facade
+- Factory
