@@ -2,9 +2,7 @@
 
 require 'autoload.php';
 
-$container_class = $_GET['container'];
-$input_data = file_get_contents('php://input');
-$input = json_decode($input_data, true);
+$container_class = '';
 
 $reflection = new ReflectionClass($container_class);
 
