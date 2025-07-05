@@ -14,7 +14,7 @@ class TemplateView extends \Moot\View implements ArrayAccess
         }
         $template = strtolower(str_replace('\\', '/', $matches[1]));
         extract($this->variables);
-        include MOOT_DIRECTORY . '/templates/' . $template . '.php';
+        include MOOT_ROOT . '/templates/' . $template . '.php';
     }
 
     public function offsetExists(mixed $offset): bool
