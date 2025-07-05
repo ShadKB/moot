@@ -11,7 +11,7 @@ PHP language features demonstrated in this project:
 - Attributes
 - Traits
   
-Software Development Patterns demonstrated
+Software development patterns demonstrated
 - Singleton
 - Flyweight
 - Polymorphism
