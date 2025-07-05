@@ -1,5 +1,5 @@
 # Moot is an MVC framework and CMS
-It implements an MVC system design following the opinions that controllers should not be responsible for determining which views are paired with which models. Instead, the concept of containers is used that construct and operate on the trio. The point of doing this promotes model and controller reusability.
+It implements an MVC system design following the opinions that controllers should not be responsible for determining which views are paired with which models. Instead, the concept of containers is used that construct and operate on the trio. The point of doing is to  promote model and controller reusability.
 
 ### SPA support
 Moot enables wiring frontend containers to backend containers through the use of model serialization.
