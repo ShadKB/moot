@@ -17,3 +17,9 @@ Software development patterns demonstrated
 - Polymorphism
 - Facade
 - Factory
+
+**Example acutation URL that unserializes the backend model and returns the serialized model**
+`https://app.domain.com/actuate.php?container=Moot\Containers\AccountContainer&action=Moot\Actions\SaveUserAction&serialize=true&unserialize=true`
+
+**Example acutation URL that unserializes the backend model and returns the container HTML output with the saved, unserialized model**
+`https://app.domain.com/actuate.php?container=Moot\Containers\AccountContainer&action=Moot\Actions\SaveUserAction&serialize=true`
