@@ -8,6 +8,6 @@ class TemplateView extends \Moot\View
 
     public function output(\Moot\Modelable $model): void
     {
-        include MOOT_AUTOLOAD_ROOT . '/templates/' . str_replace('.', DIRECTORY_SEPARATOR, $this::TEMPLATE) . '.php';
+        include MOOT_AUTOLOAD_ROOT . '/templates/' . str_replace('.', '/', $this::TEMPLATE) . '.php';
     }
 }
