@@ -10,6 +10,7 @@ PHP language features demonstrated in this project:
 - SPL autoloading
 - Attributes
 - Traits
+- Reflection
   
 Software development patterns demonstrated
 - Singleton
