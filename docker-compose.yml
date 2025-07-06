@@ -4,7 +4,7 @@ services:
     volumes:
       - "./:/var/www/html"
     ports:
-      - "80:80"
+      - "8080:80"
   moot-frontend:
     image: node:lts-bookworm-slim
     working_dir: /app/assets/admin

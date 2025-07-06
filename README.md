@@ -33,5 +33,5 @@ Software development patterns demonstrated
 
 WSL2 supported.
 
-Vue dev: `http://localhost:5173/`
-CMS dev: `http://localhost/actuate.php?container=Containers\AccountContainer&action=Actions\SaveUserAction`
+- Vue dev: `http://localhost:5173/`
+- CMS dev: `http://localhost/actuate.php?container=Containers\AccountContainer&action=Actions\SaveUserAction`
