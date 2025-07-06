@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Returns an instance of a container given its class.
+ * @param mixed $class
+ * @throws \Exception
+ * @return object
+ */
 function container($class): Moot\Container|null
 {
     $refl = new ReflectionClass($class);
