@@ -9,7 +9,7 @@ services:
     image: node:lts-bookworm-slim
     working_dir: /app/assets/moot
     entrypoint: ["/bin/bash","-c"]
-    command: '"npm install; npm run dev -- --host"'
+    command: '"npm install; npm run dev"'
     volumes:
       - "./:/app"
     ports:
