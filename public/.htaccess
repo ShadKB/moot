@@ -2,7 +2,7 @@ RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^_moot(.*)$ /admin.php/$0 [QSA,L]
+RewriteRule ^_admin(.*)$ /admin.php/$0 [QSA,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
