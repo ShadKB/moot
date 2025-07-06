@@ -22,7 +22,7 @@ Software development patterns demonstrated
 - Factory
 
 **Example actuation URL that unserializes the backend model and returns the serialized model**
-`https://app.domain.com/actuate.php?container=Moot\Containers\AccountContainer&action=Moot\Actions\SaveUserAction&serialize=true&unserialize=true`
+`https://app.domain.com/actuate.php?container=Containers\AccountContainer&action=Actions\SaveUserAction&serialize=true&unserialize=true`
 
 **Example actuation URL that unserializes the backend model and returns the container HTML output with the saved, unserialized model**
-`https://app.domain.com/actuate.php?container=Moot\Containers\AccountContainer&action=Moot\Actions\SaveUserAction&serialize=true`
+`https://app.domain.com/actuate.php?container=Containers\AccountContainer&action=Actions\SaveUserAction&serialize=true`

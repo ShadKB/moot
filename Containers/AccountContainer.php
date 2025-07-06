@@ -2,7 +2,7 @@
 
 namespace Containers;
 
-final class AccountContainer extends \Moot\Container
+final class AccountContainer extends \Moot\HttpContainer
 {
     public function __construct()
     {

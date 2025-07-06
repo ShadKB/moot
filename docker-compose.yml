@@ -1,5 +1,5 @@
 services:
-  web:
+  moot:
     build: .
     volumes:
       - "./:/var/www/html"
