@@ -45,7 +45,7 @@ abstract class Container
      * @throws \Exception
      * @return Modelable|View|Container
      */
-    private static function __instantiate(string $subclass, string $superclass): Modelable|View|Container
+    private static function __instantiate(string $subclass, string $superclass)
     {
         $refl = new \ReflectionClass($subclass);
 
