@@ -12,7 +12,6 @@
 
 <body>
     <div id="app"></div>
-    <?= $content->render() ?>
 </body>
 
 </html>
