@@ -11,14 +11,14 @@ abstract class Controller
     private static function instantiateAction(string $class): Actionable
     {
         if (!isset(self::$actionInstances[$class])) {
-            $reflection = new \ReflectionClass($class);
+            $refl = new \ReflectionClass($class);
 
-            if ($reflection->isSubclassOf(Actionable::class)) {
-                self::$actionInstances[$class] = $reflection->newInstanceWithoutConstructor();
-            } else {
+            if (!$refl->isSubclassOf(Actionable::class)) {
                 throw new \Exception("Action class is not actionable");
             }
+            self::$actionInstances[$class] = $refl->newInstanceWithoutConstructor();
         }
+
         return self::$actionInstances[$class];
     }
 
@@ -29,10 +29,9 @@ abstract class Controller
 
     public function invokeAction(string $class, Modelable $model, array $args): void
     {
-        if (in_array($class, $this->useActions)) {
-            self::instantiateAction($class)->invoke($model, $args);
-        } else {
+        if (!in_array($class, $this->useActions)) {
             throw new \Exception('Controller does not use action');
         }
+        self::instantiateAction($class)->invoke($model, $args);
     }
 }

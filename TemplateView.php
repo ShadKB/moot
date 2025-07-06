@@ -7,12 +7,14 @@ class TemplateView extends \Moot\View implements ArrayAccess
     public function output(\Moot\Modelable $model): void
     {
         $subclass = get_called_class();
+
         preg_match('/^Views\\\(.+)View$/', $subclass, $matches);
 
         if (empty($matches)) {
             throw new \Exception('Template view subclass is invalid');
         }
         $template = strtolower(str_replace('\\', '/', $matches[1]));
+
         extract($this->variables);
         include MOOT_ROOT . '/templates/' . $template . '.php';
     }
