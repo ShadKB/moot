@@ -24,6 +24,7 @@ Software development patterns demonstrated:
 - Polymorphism
 - Facade
 - Factory
+- Lazy loading
 
 ## Development
 - Install VS Code
