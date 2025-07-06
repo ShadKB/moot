@@ -8,6 +8,17 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  build: {
+    outDir: '../../public/assets/app',
+    emptyOutDir: true, // also necessary
+    rollupOptions: {
+      output: {
+        entryFileNames: `[name].js`,
+        chunkFileNames: `[name].js`,
+        assetFileNames: `[name].[ext]`
+      }
+    },
+  },
   plugins: [
     vue(),
     vueJsx(),

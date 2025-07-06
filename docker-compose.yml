@@ -7,7 +7,7 @@ services:
       - "8080:80"
   moot-frontend:
     image: node:lts-bookworm-slim
-    working_dir: /app/assets/moot
+    working_dir: /app/assets/app
     entrypoint: ["/bin/bash","-c"]
     command: '"npm install; npm run dev"'
     volumes:
