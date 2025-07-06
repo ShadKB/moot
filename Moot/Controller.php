@@ -4,9 +4,9 @@ namespace Moot;
 
 abstract class Controller
 {
-    private static $actionInstances = [];
+    private static array $actionInstances = [];
 
-    private $useActions = [];
+    protected array $useActions = [];
 
     private static function instantiateAction(string $class): Actionable
     {
