@@ -1,15 +1,15 @@
 # Moot is an MVC framework and CMS
-It implements an MVC system design following the opinions that controllers should not be responsible for determining which views are paired with which models. Instead, the concept of containers is used that construct and operate on the trio. The point of implementing MVC in this way is to promote easy model and controller reusability as demonstrated in the `Containers\UserContainer` container.
+This system implements an MVC architectural design that follows the controversial opinion that controllers **should not** be responsible combining the views to models. Instead, the concept of containers is used which encapsulates and carries out this logic.
 
 ### SPA support
-Moot enables wiring frontend containers to backend containers through the use of model serialization.
+Moot enables the wiring of front containers, such as React containers, to backend containers using model serialization.
 
-Frontend built with Vue 2.
+The frontend admin is an SPA application built with Vue 2.
 
-### The purpose of this project repo is to demonstrate PHP knowledge and skill.
-PSR was ignored in developing this project.
+### The purpose of this project is to demonstrate my PHP knowledge and skill.
+Note: I disregarded PSR standards for this project.
 
-PHP language features demonstrated in this project:
+PHP language features demonstrated:
 - OOP
 - SPL autoloading
 - Attributes
@@ -18,7 +18,7 @@ PHP language features demonstrated in this project:
 - Type hinting
 - ArrayAccess
   
-Software development patterns demonstrated
+Software development patterns demonstrated:
 - Singleton
 - Flyweight
 - Polymorphism
@@ -26,12 +26,12 @@ Software development patterns demonstrated
 - Factory
 
 ## Development
-- Download and install VS Code
-- Clone repo
-- Install Dev Container extensions
-- Open in Dev Container
+- Install VS Code
+- Clone this repo
+- Install the dev container extensions in VS Code (see manifest in `devcontainer.json`)
+- Open the project in a dev container in VS Code
 
 WSL2 supported.
 
-- Vue dev: `http://localhost:5173/`
-- CMS dev: `http://localhost:8080/actuate.php?container=Containers\AccountContainer&action=Actions\SaveUserAction`
+- Vue dev: `http://localhost:5173/` - Frontend development (supports hot loading)
+- CMS dev: `http://localhost:8080/actuate.php?container=Containers\AccountContainer&action=Actions\SaveUserAction` - Backend development
