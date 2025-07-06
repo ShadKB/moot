@@ -12,7 +12,7 @@
 
 <body>
     <div id="app"></div>
-    <?= $container->render() ?>
+    <?= $content->render() ?>
 </body>
 
 </html>

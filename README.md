@@ -7,6 +7,8 @@ Moot enables wiring frontend containers to backend containers through the use of
 Frontend built with Vue 2.
 
 ### The purpose of this project repo is to demonstrate PHP knowledge and skill.
+PSR was ignored in developing this project.
+
 PHP language features demonstrated in this project:
 - OOP
 - SPL autoloading

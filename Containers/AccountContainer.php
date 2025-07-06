@@ -4,8 +4,7 @@ namespace Containers;
 
 final class AccountContainer extends \Moot\HttpContainer
 {
-    public function __construct()
-    {
-        parent::__construct(new \Models\AccountModel, new \Views\AccountView, new \Controllers\AccountController);
-    }
+    protected string $modelClass = \Models\AccountModel::class;
+    protected string $viewClass = \Views\AccountView::class;
+    protected string $controllerClass = \Controllers\AccountController::class;
 }
