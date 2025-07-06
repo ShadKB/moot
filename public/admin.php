@@ -2,15 +2,15 @@
 
 require '../autoload.php';
 
-$site_model = new Models\SiteModel;
-$html_view = new Views\HtmlView;
+$model = new Models\SiteModel;
+$view = new Views\AdminView;
 $container_class = 'Containers\\UserContainer'; // Test with cli: php index.php
 $reflection = new ReflectionClass($container_class);
 
 if ($reflection->isSubclassOf(Moot\HttpContainer::class)) {
     $container = $reflection->newInstance();
-    $html_view['content'] = $container;
+    $view['container'] = $container;
 }
-echo $html_view->output($site_model);
+echo $view->output($model);
 
 exit();
