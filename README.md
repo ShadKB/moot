@@ -4,7 +4,7 @@ This system implements an MVC architectural design that follows the controversia
 ### SPA support
 Moot enables the wiring of front containers, such as React containers, to backend containers using model serialization.
 
-The frontend admin is an SPA application built with Vue 2.
+The frontend admin is an SPA application built with Vue 2 and TailwindCSS.
 
 ### The purpose of this project is to demonstrate my PHP knowledge and skill.
 Note: I disregarded PSR standards for this project.
