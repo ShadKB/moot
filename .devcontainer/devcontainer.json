@@ -4,5 +4,15 @@
 	"dockerComposeFile": "../docker-compose.yml",
 	"service": "moot",
 	"workspaceFolder": "/var/www/html",
-	"shutdownAction": "stopCompose"
+	"shutdownAction": "stopCompose",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-containers",
+				"ms-vscode-remote.remote-containers",
+				"ms-vscode-remote.remote-wsl",
+				"DEVSENSE.phptools-vscode"
+			]
+		}
+	}
 }
