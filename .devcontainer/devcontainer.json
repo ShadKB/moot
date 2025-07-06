@@ -11,7 +11,8 @@
 				"ms-azuretools.vscode-containers",
 				"ms-vscode-remote.remote-containers",
 				"ms-vscode-remote.remote-wsl",
-				"DEVSENSE.phptools-vscode"
+				"DEVSENSE.phptools-vscode",
+				"Vue.volar"
 			]
 		}
 	}
