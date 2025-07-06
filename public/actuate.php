@@ -1,6 +1,6 @@
 <?php
 
-require 'autoload.php';
+require '../autoload.php';
 
 $request_data = [];
 

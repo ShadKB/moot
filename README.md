@@ -4,6 +4,8 @@ It implements an MVC system design following the opinions that controllers shoul
 ### SPA support
 Moot enables wiring frontend containers to backend containers through the use of model serialization.
 
+Frontend built with Vue 2.
+
 ### The purpose of this project repo is to demonstrate PHP knowledge and skill.
 PHP language features demonstrated in this project:
 - OOP
@@ -21,8 +23,13 @@ Software development patterns demonstrated
 - Facade
 - Factory
 
-**Example actuation URL that unserializes the backend model and returns the serialized model**
-`https://app.domain.com/actuate.php?container=Containers\AccountContainer&action=Actions\SaveUserAction&serialize=true&unserialize=true`
+## Development
+- Download and install VS Code
+- Clone repo
+- Install Dev Container extensions
+- Open in Dev Container
 
-**Example actuation URL that unserializes the backend model and returns the container HTML output with the saved, unserialized model**
-`https://app.domain.com/actuate.php?container=Containers\AccountContainer&action=Actions\SaveUserAction&serialize=true`
+WSL2 supported.
+
+Vue dev: `http://localhost:5173/`
+CMS dev: `http://localhost/actuate.php?container=Containers\AccountContainer&action=Actions\SaveUserAction`
